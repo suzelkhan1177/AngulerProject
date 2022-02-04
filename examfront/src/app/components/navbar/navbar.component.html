@@ -1,0 +1,52 @@
+<mat-toolbar color="accent">
+  <a 
+  [routerLink] = "'/'"
+    mat-icon-button
+    class="example-icon"
+    aria-label="Example icon-button with menu icon"
+  >
+    <mat-icon>menu</mat-icon>
+</a>
+  <span class="ml-20">Suzel Project</span>
+  <span class="example-spacer"></span>
+  <a 
+  *ngIf="!login.isLoggedIn()"
+  [routerLink] = "'/login'"
+    mat-icon-button
+    class="example-icon favorite-icon"
+    aria-label="Example icon-button with heart icon"
+  >
+   LogIn
+  </a>
+  <a 
+  *ngIf="!login.isLoggedIn()"
+  [routerLink] = "'/singup'"
+    mat-icon-button
+    class="example-icon favorite-icon mr-20 ml-20"
+    aria-label="Example icon-button with heart icon"
+  >
+   Register
+  </a>
+
+  <a
+ 
+  *ngIf="login.isLoggedIn()"
+  routerLink="/admin/profile"
+    mat-icon-button
+    class="example-icon favorite-icon mr-20 ml-20"
+    aria-label="Example icon-button with heart icon"
+  >
+    {{ user.username }}
+  </a>
+
+ <a 
+  (click)="logout()"
+  *ngIf="login.isLoggedIn()"
+    mat-icon-button
+    class="example-icon favorite-icon mr-20 ml-20"
+    aria-label="Example icon-button with heart icon"
+  >
+   Logout
+  </a>
+ 
+</mat-toolbar>

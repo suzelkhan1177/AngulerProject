@@ -1,0 +1,18 @@
+<mat-card class="mt-10">
+  <mat-action-list>
+    <div mat-subheader>Available Categorys</div>
+
+    <button mat-list-item routerLink="/user-dishbord/0">
+      <mat-icon mat-list-icon>category</mat-icon> All Quizzez
+    </button>
+    <button
+      [routerLink]="'/user-dishbord/' + c.cid"
+      mat-list-item
+      *ngFor="let c of categories"
+    >
+      <mat-icon mat-list-icon>quiz</mat-icon> {{ c.title }}
+    </button>
+  </mat-action-list>
+</mat-card>
+
+<!-- {{categories | json}} -->
