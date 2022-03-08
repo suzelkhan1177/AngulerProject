@@ -17,7 +17,28 @@
           </mat-card-content>
         </mat-card>
       </div>
-      <div class="col-md-8 mt-10">
+      <div class="col-md-2  mb-20">
+        <h3>progress</h3>
+        <!-- progress -->
+        <mat-card style="margin-top: 20px">
+          <mat-card-header>
+            <mat-card-title> Progress </mat-card-title>
+            <mat-card-subtitle class="mt-10">
+              Quiz will Automatically when timer reaches t0 <b>0:0</b>
+            </mat-card-subtitle>
+          </mat-card-header>
+          <mat-card-content>
+            <h1 class="text-center">{{ getFormatTime() }}</h1>
+            <mat-spinner
+              color="accent"
+              mode="determinate"
+              style="margin: auto"
+              [value]="(timer / (this.questions.length * 2 * 60)) * 100"
+            ></mat-spinner>
+          </mat-card-content>
+        </mat-card>
+      </div>
+      <div class="col-md-8 mt-10 mb-20">
         <!-- Question -->
         <ng-container *ngIf="questions">
           <h1>
@@ -38,8 +59,9 @@
                 aria-label="Select an option"
                 [(ngModel)]="q.givenAnswer"
               >
+              
                 <div class="col-md-6 mb-10">
-                  <mat-radio-button name="i" [value]="q.option1">{{
+                  <mat-radio-button  name="i" [value]="q.option1">  {{
                     q.option1
                   }}</mat-radio-button>
                 </div>
@@ -78,27 +100,7 @@
           </button>
         </div>
       </div>
-      <div class="col-md-2">
-        <h3>progress</h3>
-        <!-- progress -->
-        <mat-card style="margin-top: 20px">
-          <mat-card-header>
-            <mat-card-title> Progress </mat-card-title>
-            <mat-card-subtitle class="mt-10">
-              Quiz will Automatically when timer reaches t0 <b>0:0</b>
-            </mat-card-subtitle>
-          </mat-card-header>
-          <mat-card-content>
-            <h1 class="text-center">{{ getFormatTime() }}</h1>
-            <mat-spinner
-              color="accent"
-              mode="determinate"
-              style="margin: auto"
-              [value]="(timer / (this.questions.length * 2 * 60)) * 100"
-            ></mat-spinner>
-          </mat-card-content>
-        </mat-card>
-      </div>
+     
     </div>
   </div>
 </div>

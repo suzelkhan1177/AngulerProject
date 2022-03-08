@@ -83,7 +83,7 @@ formSubmit(){
     console.log("Error !!");
     console.log(error);
 
-    Swal.fire("Error !!", "Server Error", 'error');
+    Swal.fire("Error !!", "Incorect Password Or Incorrect Password", 'error');
     // this.snack.open("Inviled Details !! tyr angin ",'',{
     //   duration : 3000,
     // });

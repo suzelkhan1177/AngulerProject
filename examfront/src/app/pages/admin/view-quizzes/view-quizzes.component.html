@@ -18,10 +18,10 @@
 
   <mat-card-actions>
     <button [routerLink]="'/admin/view-questions/'+ q.qid +'/' + q.title" mat-flat-button color="accent">Question</button>
-    <button mat-stroked-button color="accent" class="ml-20">
+    <button mat-stroked-button color="accent" class=" mr-10 mt-10 mb-10 ml-10">
       Max Marks : {{ q.maxMarks }}
     </button>
-    <button mat-stroked-button color="accent" class="ml-20">
+    <button mat-stroked-button color="accent" class=" mr-10 mt-10 mb-10 ml-10">
       Number Of Question : {{ q.quetionsCount }}
     </button>
 
@@ -29,15 +29,15 @@
       [routerLink]="'/admin/quiz/' + q.qid"
       mat-flat-button
       color="accent"
-      class="ml-20"
+      class=" mr-10 mt-10 mb-10 ml-10"
     >
       Update
     </button>
-    <button mat-flat-button color="accent" class="ml-20">Attempts</button>
+    <button mat-flat-button color="accent" class=" mr-10 mt-10 mb-10 ml-10">Attempts</button>
     <button
       mat-flat-button
       color="warn"
-      class="ml-10"
+      class=" mr-10 mt-10 mb-10 ml-10"
       (click)="deleteQuiz(q.qid)"
     >
       DELETE
@@ -45,7 +45,7 @@
   </mat-card-actions>
 </mat-card>
 
-<div class="container text-center mt-20">
+<div class="container text-center  mr-10 mt-10 mb-10 ml-10">
   <button routerLink="/admin/add-quiz" mat-raised-button color="accent">
     Add New Quiz
   </button>
