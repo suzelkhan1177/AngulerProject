@@ -6,16 +6,32 @@
         <div class="text-center">
         
           <div class="container">
-            <img src="../../../assets/logo.jpg" alt="" />
+            <img src="../../../assets/singup.png" alt="" height="50%" width="40%"  />
           </div>
 
           <h1>Register Here!!</h1>
           <form (ngSubmit)="formSubmit()">
             <!-- {{ user | json }} -->
 
-            <!-- User Name Feild -->
+           
+            <!-- First Name Feild -->
             <mat-form-field class="full-width" appearance="outline">
-              <mat-label>User Name</mat-label>
+              <mat-label>First Name</mat-label>
+              <input  [(ngModel)]="user.firstname"
+              name="firstname"
+              required matInput placeholder="Enter First Name" />
+            </mat-form-field>
+
+            <!-- Last Name Feild -->
+            <mat-form-field class="full-width" appearance="outline">
+              <mat-label>Last Name</mat-label>
+              <input  [(ngModel)]="user.lastname"
+              name="lastname" required matInput placeholder="Enter Last Name" />
+            </mat-form-field>
+
+             <!-- User Name Feild -->
+             <mat-form-field class="full-width" appearance="outline">
+              <mat-label>User Name Unique like - Suzel786@#</mat-label>
               <input
                 [(ngModel)]="user.username"
                 name="username"
@@ -39,20 +55,6 @@
               />
             </mat-form-field>
 
-            <!-- First Name Feild -->
-            <mat-form-field class="full-width" appearance="outline">
-              <mat-label>First Name</mat-label>
-              <input  [(ngModel)]="user.firstname"
-              name="firstname"
-              required matInput placeholder="Enter First Name" />
-            </mat-form-field>
-
-            <!-- Last Name Feild -->
-            <mat-form-field class="full-width" appearance="outline">
-              <mat-label>Last Name</mat-label>
-              <input  [(ngModel)]="user.lastname"
-              name="lastname" required matInput placeholder="Enter Last Name" />
-            </mat-form-field>
 
             <!-- Email Id Feild -->
             <mat-form-field class="full-width" appearance="outline">
@@ -79,6 +81,7 @@
                 placeholder="Enter Number"
               />
             </mat-form-field>
+            
 
             <div class="container" style="margin-bottom: 20px">
               <button

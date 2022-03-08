@@ -22,37 +22,38 @@ public class ExamportalApplication  implements CommandLineRunner{
 		SpringApplication.run(ExamportalApplication.class, args);
 	}
 
+
 	@Override
 	public void run(String... args) throws Exception {
 	
 		System.out.println("Start Runing");
 		
 //		UsersEntity  user = new UsersEntity();
-//		
-//		user.setUsername("suzel123");
+//
+//		user.setUsername("suzel11");
 //		user.setFirstname("suzel");
 //		user.setLastname("Khan");
 //		user.setEmailId("suzelkhan44@gmail.com");
 //		user.setPassword(this.bCryptPasswordEncoder.encode("abc"));
 //		user.setProfile("deafult.png");
 //		user.setPhone("7830876003");
-//		
+//
 //		RoleEntity role1 = new RoleEntity();
-//		
+//
 //		role1.setRollid(44L);
 //		role1.setRollname("Admin");
-//		
+//
 //		Set<UserRoleEntity> userRoleSet = new HashSet<>();
-//		
+//
 //		UserRoleEntity userRole = new UserRoleEntity();
-//		
+//
 //		userRole.setRoles(role1);
 //		userRole.setUser(user);
-//		
+//
 //		userRoleSet.add(userRole);
-//		
+//
 //		UsersEntity user1 = this.userservice.createUser(user, userRoleSet);
-//		
+//
 //		System.out.println(user1.getUsername());
 		
 	}

@@ -16,6 +16,7 @@ export class SingupComponent implements OnInit {
  
   // Data Binding
   public user ={
+    profile:'',
     username: '',
     password: '',
     firstname: '',
