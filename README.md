@@ -1,7 +1,7 @@
 # Anguler-And-Java-Project
 Anguler and Spring boot And Java Project
 <h1 align="center">Hi 👋, I'm Suzel</h1>
-<h3 align="center">A passionate frontend developer from India</h3>
+<h3 align="center">A passionate  Full Stack development from India</h3>
 
 - 🔭 I’m currently working on [Quiz AngulerJS And Java SpringBoot](https://github.com/suzelkhan1177/Anguler-And-Java-Project/new/main?readme=1)
 
