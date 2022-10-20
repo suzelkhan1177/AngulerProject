@@ -1,5 +1,5 @@
 # Anguler-And-Java-Project
-Anguler and Spring boot And Java Project
+MCQ Quiz Application is a Java Spring Boot, MySQL and Angular Project which runs on the tomcat server, you can also run this project in Eclipse and Spring Tool Suites (STS) We have developed this Java Spring Boot and Angular Project on MCQ Quiz Application for automating the process of MCQ Quiz Application. The main features of this project is to manage Students. Marks Courses Results Papers and Examinations
 <h1 align="center">Hi 👋, I'm Suzel</h1>
 <h3 align="center">A passionate  Full Stack development from India</h3>
 
